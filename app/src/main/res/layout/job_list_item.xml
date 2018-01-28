@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:contentPadding="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="12dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/list_item_job_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="4dp"
+                tools:text="Job Title"/>
+            <TextView
+                android:id="@+id/list_item_job_company_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_item_job_title_text_view"
+                android:padding="4dp"
+                tools:text="Job Company"/>
+            <TextView
+                android:id="@+id/list_item_job_experince_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_item_job_company_text_view"
+                android:padding="4dp"
+                tools:text="Job Experince"/>
+            <TextView
+                android:id="@+id/list_item_job_location_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_item_job_experince_text_view"
+                android:padding="4dp"
+                tools:text="Job Location"/>
+            <TextView
+                android:id="@+id/list_item_job_description_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_item_job_location_text_view"
+                android:padding="4dp"
+                tools:text="Job Description"/>
+            <TextView
+                android:id="@+id/list_item_job_post_date_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_item_job_description_text_view"
+                android:padding="4dp"
+                tools:text="Job Posted"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
